@@ -34,8 +34,6 @@ class Main extends egret.DisplayObjectContainer {
     public constructor() {
         super();
         this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
-        let testB = TestA.arr.join("");
-        console.log(testB);
     }
 
     private onAddToStage(event: egret.Event) {
@@ -145,7 +143,8 @@ class Main extends egret.DisplayObjectContainer {
         textfield.y = 135;
         this.textfield = textfield;
 
-
+        var myPanel: PaintingPanel = new PaintingPanel();
+        this.addChild(myPanel);
     }
 
     /**
