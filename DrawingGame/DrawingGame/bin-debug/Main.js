@@ -76,6 +76,8 @@ var Main = (function (_super) {
     function Main() {
         var _this = _super.call(this) || this;
         _this.addEventListener(egret.Event.ADDED_TO_STAGE, _this.onAddToStage, _this);
+        var testB = TestA.arr.join("");
+        console.log(testB);
         return _this;
     }
     Main.prototype.onAddToStage = function (event) {
@@ -234,3 +236,4 @@ var Main = (function (_super) {
     return Main;
 }(egret.DisplayObjectContainer));
 __reflect(Main.prototype, "Main");
+//# sourceMappingURL=Main.js.map

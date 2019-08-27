@@ -34,6 +34,8 @@ class Main extends egret.DisplayObjectContainer {
     public constructor() {
         super();
         this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
+        let testB = TestA.arr.join("");
+        console.log(testB);
     }
 
     private onAddToStage(event: egret.Event) {
