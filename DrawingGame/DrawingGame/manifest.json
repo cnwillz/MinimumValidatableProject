@@ -3,6 +3,7 @@
 		"libs/modules/egret/egret.js",
 		"libs/modules/egret/egret.web.js",
 		"libs/modules/game/game.js",
+		"libs/modules/eui/eui.js",
 		"libs/modules/tween/tween.js",
 		"libs/modules/assetsmanager/assetsmanager.js",
 		"libs/modules/promise/promise.js",
@@ -10,6 +11,7 @@
 		"libs/WXCloudApi/WXCloudApi.js"
 	],
 	"game": [
+		"bin-debug/DrawedLine.js",
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/PaintingPanel.js",

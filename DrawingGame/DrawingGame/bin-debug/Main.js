@@ -195,6 +195,17 @@ var Main = (function (_super) {
         this.textfield = textfield;
         var myPanel = new PaintingPanel();
         this.addChild(myPanel);
+        var btnBack = new eui.Button();
+        btnBack.label = "撤销";
+        btnBack.skinName = "resource/skin.exml";
+        btnBack.addEventListener(egret.TouchEvent.TOUCH_TAP, myPanel.onBtnBack.bind(myPanel), this);
+        this.addChild(btnBack);
+        var btnClean = new eui.Button();
+        btnClean.label = "清空";
+        btnClean.skinName = "resource/skin.exml";
+        btnClean.x = 100;
+        btnClean.addEventListener(egret.TouchEvent.TOUCH_TAP, myPanel.onBtnClean.bind(myPanel), this);
+        this.addChild(btnClean);
     };
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
