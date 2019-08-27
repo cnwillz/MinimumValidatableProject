@@ -1,0 +1,13 @@
+{
+	"globalMember": [
+		{
+			"filename": "D:\\GoogleDrive\\VersionControlledProjects\\MinimumViableProject\\DrawingGame\\DrawingGame\\src\\Platform.ts",
+			"kind": "globalMember",
+			"type": "Platform",
+			"name": "platform",
+			"memberof": "window",
+			"scope": "instance",
+			"pType": "public"
+		}
+	]
+}
