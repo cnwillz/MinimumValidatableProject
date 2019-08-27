@@ -76,8 +76,6 @@ var Main = (function (_super) {
     function Main() {
         var _this = _super.call(this) || this;
         _this.addEventListener(egret.Event.ADDED_TO_STAGE, _this.onAddToStage, _this);
-        var testB = TestA.arr.join("");
-        console.log(testB);
         return _this;
     }
     Main.prototype.onAddToStage = function (event) {
@@ -195,6 +193,8 @@ var Main = (function (_super) {
         textfield.x = 172;
         textfield.y = 135;
         this.textfield = textfield;
+        var myPanel = new PaintingPanel();
+        this.addChild(myPanel);
     };
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
